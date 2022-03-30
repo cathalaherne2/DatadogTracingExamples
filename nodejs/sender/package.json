@@ -1,0 +1,16 @@
+{
+  "name": "sender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1093.0",
+    "datadog-lambda-js": "^5.73.0",
+    "dd-trace": "^2.3.1"
+  }
+}

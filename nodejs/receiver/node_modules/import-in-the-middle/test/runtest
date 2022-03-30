@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+// Unless explicitly stated otherwise all files in this repository are licensed under the Apache 2.0 License.
+//
+// This product includes software developed at Datadog (https://www.datadoghq.com/). Copyright 2021 Datadog, Inc.
+
+const { spawn } = require('child_process')
+const path = require('path')
+
+process.env.NODE_NO_WARNINGS = 1
+
+const filename = process.argv[2]
+const args = [
+  '--unhandled-rejections=strict',
+  ...process.argv.slice(2)
+]
+if (!filename.includes('disabled')) {
+  args.unshift(`--experimental-loader=${path.join(__dirname, '..', 'hook.mjs')}`)
+}
+
+spawn('node', args, { stdio: 'inherit' }).on('close', code => {
+  process.exitCode = code
+})
