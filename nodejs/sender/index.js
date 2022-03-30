@@ -28,7 +28,7 @@ const ingredients = tracer.trace('send sqs message', { resource: 'resource_name'
                 spanID: spanID,
                 traceID: traceID
                 }),
-        QueueUrl: 'https://sqs.eu-west-1.amazonaws.com/601427279990/cathalsqueue'
+        QueueUrl: '<sqs queue URL>'
         };
         console.log(tracer.scope().active()?.context().toTraceId());
         sqs.sendMessage(params, (err, data) => {
