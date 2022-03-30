@@ -10,7 +10,7 @@ SQS.config.update({
   region: 'eu-west-1'
 });
 
-const queueUrl = "https://sqs.eu-west-1.amazonaws.com/601427279990/cathalsqueue";
+const queueUrl = "<sqs queue>";
 var SQS_PARAMS = {    
     QueueUrl: queueUrl,
     VisibilityTimeout: 20,
