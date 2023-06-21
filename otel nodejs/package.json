@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opentelemetry/api": "^1.1.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.28.0",
+    "@opentelemetry/exporter-jaeger": "^1.1.1",
+    "@opentelemetry/exporter-metrics-otlp-http": "^0.27.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.27.0",
+    "@opentelemetry/exporter-zipkin": "^1.1.1",
+    "@opentelemetry/instrumentation": "^0.27.0",
+    "@opentelemetry/sdk-metrics-base": "^0.27.0",
+    "@opentelemetry/sdk-node": "^0.27.0",
+    "@opentelemetry/sdk-trace-base": "^1.1.1",
+    "@opentelemetry/sdk-trace-node": "^1.1.1",
+    "@opentelemetry/web": "^0.24.0",
+    "express": "^4.17.3",
+    "opentelemetry-exporter-datadog": "^0.2.0",
+    "request": "^2.88.2",
+    "system-sleep": "^1.3.7"
+  }
+}
